@@ -1,0 +1,62 @@
+[
+    {
+        "NumeroDeVuelo": "AA123",
+        "HorarioDeLlegada": "2024-08-15T14:30:00Z",
+        "LineaAerea": "American Airlines",
+        "Demorado": false
+    },
+    {
+        "NumeroDeVuelo": "DL456",
+        "HorarioDeLlegada": "2024-08-15T15:45:00Z",
+        "LineaAerea": "Delta Airlines",
+        "Demorado": true
+    },
+    {
+        "NumeroDeVuelo": "UA789",
+        "HorarioDeLlegada": "2024-08-15T16:00:00Z",
+        "LineaAerea": "United Airlines",
+        "Demorado": false
+    },
+    {
+        "NumeroDeVuelo": "SW123",
+        "HorarioDeLlegada": "2024-08-15T17:15:00Z",
+        "LineaAerea": "Southwest Airlines",
+        "Demorado": true
+    },
+    {
+        "NumeroDeVuelo": "BA456",
+        "HorarioDeLlegada": "2024-08-15T18:30:00Z",
+        "LineaAerea": "British Airways",
+        "Demorado": false
+    },
+    {
+        "NumeroDeVuelo": "LH789",
+        "HorarioDeLlegada": "2024-08-15T19:45:00Z",
+        "LineaAerea": "Lufthansa",
+        "Demorado": true
+    },
+    {
+        "NumeroDeVuelo": "AF123",
+        "HorarioDeLlegada": "2024-08-15T20:00:00Z",
+        "LineaAerea": "Air France",
+        "Demorado": false
+    },
+    {
+        "NumeroDeVuelo": "IB456",
+        "HorarioDeLlegada": "2024-08-15T21:15:00Z",
+        "LineaAerea": "Iberia",
+        "Demorado": true
+    },
+    {
+        "NumeroDeVuelo": "KL789",
+        "HorarioDeLlegada": "2024-08-15T22:30:00Z",
+        "LineaAerea": "KLM",
+        "Demorado": false
+    },
+    {
+        "NumeroDeVuelo": "QR123",
+        "HorarioDeLlegada": "2024-08-15T23:45:00Z",
+        "LineaAerea": "Qatar Airways",
+        "Demorado": true
+    }
+]
