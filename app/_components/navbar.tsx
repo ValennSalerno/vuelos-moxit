@@ -6,25 +6,25 @@ export function Navbar() {
     const { push } =useRouter();
 
     return (
-        <div className="flex justify-left pt-2.5 gap-16 pl-8">
-            <div onClick={() => push(`/`)}>
+        <div className="flex justify-left items-center pt-2.5 gap-8 pl-8 pb-4  bg-black text-white font-bold ">
+            <p 
+                role="button"
+                onClick={() => push(`/`)}>
+                Flights
+            </p>
+            <div onClick={() => push(`/register`)}>
                 <button>
-                    Vuelos
+                    Register
                 </button>
             </div>
-            <div onClick={() => push(`/alta`)}>
+            <div onClick={() => push(`/cancel`)}>
                 <button>
-                    Alta
+                    Cancel
                 </button>
             </div>
-            <div onClick={() => push(`/baja`)}>
+            <div onClick={() => push(`/modify`)}>
                 <button>
-                    Baja
-                </button>
-            </div>
-            <div onClick={() => push(`/modificacion`)}>
-                <button>
-                    Modificacion
+                    Modification
                 </button>
             </div>
         </div>
