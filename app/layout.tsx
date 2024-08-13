@@ -4,11 +4,10 @@ import "./globals.css";
 import { Navbar } from "./_components/navbar";
 import { cn } from "@/lib/utils";
 
-
 const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
   title: "Vuelos",
@@ -22,17 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(
+      <body
+        className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <div>
           <Navbar />
-          <div>
-            {children}
-          </div>
-          
+          <div className="p-8">{children}</div>
         </div>
       </body>
     </html>

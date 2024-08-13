@@ -1,0 +1,9 @@
+{
+  "typescript.preferences.importModuleSpecifier": "shortest", // Use @/ instead of ../../../,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
