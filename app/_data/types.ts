@@ -1,6 +1,7 @@
 interface Flight {
-  NumeroDeVuelo: string;
-  HorarioDeLlegada: string;
-  LineaAerea: string;
-  Demorado: boolean;
+  id: number;
+  number_of_flight: string;
+  arrival_time: string;
+  airline: string;
+  delayed: boolean;
 }

@@ -1,21 +1,25 @@
+"use client";
+
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
+  TableFooter,
 } from "@/components/ui/table";
 
-import { format } from "date-fns";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 interface FlightsListProps {
   flights: Flight[];
 }
 
 export function FlightsList({ flights }: FlightsListProps) {
+  const { push } = useRouter();
+
   return (
     <Table>
       <TableHeader>
@@ -24,26 +28,42 @@ export function FlightsList({ flights }: FlightsListProps) {
           <TableHead>Flight</TableHead>
           <TableHead>Airline</TableHead>
           <TableHead>Delayed</TableHead>
+          <TableHead>Settings</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
         {flights.map((flight) => (
-          <TableRow key={flight.NumeroDeVuelo}>
-            <TableCell className="font-medium">
-              {format(new Date(flight.HorarioDeLlegada), "HH:mm")}
-            </TableCell>
-            <TableCell>{flight.NumeroDeVuelo}</TableCell>
-            <TableCell>{flight.LineaAerea}</TableCell>
-            <TableCell>
-              {flight.Demorado !== undefined
-                ? flight.Demorado
-                  ? "Yes"
-                  : "No"
-                : "No info"}
+          <TableRow key={flight.number_of_flight}>
+            <TableCell className="font-medium">{flight.arrival_time}</TableCell>
+            <TableCell>{flight.number_of_flight}</TableCell>
+            <TableCell>{flight.airline}</TableCell>
+            <TableCell>{flight.delayed ? "Yes" : "No"}</TableCell>
+            <TableCell className="flex gap-4">
+              <Button
+                type="button"
+                className="w-[70px] h-[30px] flex"
+                variant="default"
+                onClick={() => push(`/edit/${flight.id}`)}
+              >
+                Edit
+              </Button>
+              <Button
+                type="button"
+                className="w-[70px] h-[30px] flex bg-red-700"
+                variant="default"
+                onClick={() => push(`/cancel/${flight.id}`)}
+              >
+                Delete
+              </Button>
             </TableCell>
           </TableRow>
         ))}
       </TableBody>
+      {flights?.length ? null : (
+        <TableFooter>
+          <p>No results.</p>
+        </TableFooter>
+      )}
     </Table>
   );
 }
