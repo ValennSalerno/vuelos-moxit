@@ -26,7 +26,7 @@ export default function RegisterPage() {
       <p>Arrival time</p>
       <Input required name="arrivalTime" type="text" placeholder="--:--" />
       <label className="text-gray-400 pb-4 text-xs">
-        We'll never share your email with anyone else
+        We&apos;ll never share your email with anyone else
       </label>
       <p>Flight</p>
       <Input

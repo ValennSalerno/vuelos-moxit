@@ -43,7 +43,7 @@ export default async function EditPage({ params }: { params: { id: string } }) {
         placeholder="--:--"
       />
       <label className="text-gray-400 pb-4 text-xs">
-        We'll never share your email with anyone else
+        We&apos;ll never share your email with anyone else
       </label>
       <p>Flight</p>
       <Input
