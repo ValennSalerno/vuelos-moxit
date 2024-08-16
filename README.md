@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Vuelos Moxit
 
-## Getting Started
+Este proyecto es una aplicación web para la gestión de datos de vuelos, desarrollada con Next.js.
+Utiliza Tailwind CSS y Bootstrap para el diseño, y Supabase como solución para la base de datos.
 
-First, run the development server:
+Despliegue
+La aplicación está desplegada en Vercel y se puede acceder a ella aquí: salerno-vuelos-moxit.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Características
+Gestión de Vuelos: La aplicación permite la visualización y gestión de datos de vuelos.
+Componentes Reutilizables: Se han creado varios componentes reutilizables, como tablas y formularios.
+Estilo: Los estilos están hechos utilizando una combinación de Tailwind CSS y Bootstrap.
+Base de Datos en Supabase: La aplicación utiliza Supabase para manejar la persistencia de datos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Implementación de componentes de tablas
+Se integraron componentes de tablas funcionales utilizando la biblioteca ShadCN UI, que proporciona soluciones preconstruidas y accesibles para componentes de interfaz de usuario.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Razones para elegir componentes preconstruidos
+Al utilizar estos componentes, pude centrarme en las necesidades específicas de la aplicación, como la integración con Supabase para la gestión de datos de vuelos y la personalización de estilos. Esto me permitió:
+Acelerar el Desarrollo - Garantizar la Accesibilidad - Mantener un Código Limpio y Mantenible
